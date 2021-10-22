@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router';
+import React from 'react';
 
 export interface PasswordProps {
   password: string;
@@ -34,12 +35,12 @@ const Password = ({ password }: PasswordProps) => {
     <div className={styles.completeContainer}>
       <main className={styles.container}>
         <div className={styles.passwordDiv}>
-        <h1 className={styles.title}>
-          Enter Password
-        </h1>
-        <div className={styles.passwordEntry}>
-          <input type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} />
-        </div>
+          <h1 className={styles.title}>
+            Enter Password
+            </h1>
+          <div className={styles.passwordEntry}>
+            <input type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} />
+          </div>
         </div>
       </main>
     </div>

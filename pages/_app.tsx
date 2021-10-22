@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
         <link rel="manifest" href="/favicons/site.webmanifest" />
+        <link rel="preload" as="image" href="/password-background.jpg"/>
       </Head>
       <Component {...pageProps} />
     </React.Fragment>
