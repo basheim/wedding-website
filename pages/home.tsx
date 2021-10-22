@@ -16,15 +16,15 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Wedding Website TBD
+    <div className={styles.homeContainer}>
+    <main className={styles.container}>
+      <h1 className={styles.title}>
+        Wedding Website TBD
       </h1>
-        <div className={styles.mainImage}>
-          <Image src="/profile.jpg" width={300} height={300} />
-        </div>
-      </main>
+      <div className={styles.mainImage}>
+        <Image objectFit="contain" src="/profile.jpg" width={300} height={300} />
+      </div>
+    </main>
     </div>
   )
 }

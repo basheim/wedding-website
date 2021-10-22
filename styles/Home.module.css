@@ -9,6 +9,13 @@
   padding-top: 5rem;
 }
 
+.homeContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #d1b7a0;
+}
+
 .completeContainer {
   position: fixed;
   height: 100%;
@@ -44,6 +51,13 @@
   justify-content: center;
   align-items: center;
   background-color: grey;
+}
+
+.mainImage {
+  border-radius: 1rem;
+  height: 300;
+  width: 300; 
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
