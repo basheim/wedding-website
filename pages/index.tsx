@@ -31,13 +31,15 @@ const Password = ({ password }: PasswordProps) => {
   }
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
+    <div className={styles.completeContainer}>
+      <main className={styles.container}>
+        <div className={styles.passwordDiv}>
         <h1 className={styles.title}>
-          Enter Password:
+          Enter Password
         </h1>
         <div className={styles.passwordEntry}>
           <input type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} />
+        </div>
         </div>
       </main>
     </div>

@@ -9,9 +9,18 @@
   padding-top: 5rem;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
+.completeContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/password-background.png");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.passwordDiv {
+  margin-bottom: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
