@@ -2,7 +2,7 @@ import styles from '../styles/home.module.css'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Sidebar from '../components/nav/sidebar';
-import Image from 'next/image'
+import Layout from '../components/layout';
 
 const Home = () => {
   const router = useRouter();
@@ -22,6 +22,9 @@ const Home = () => {
           <h2 className={styles.topLeftText}>{"Brandon & Ellen"}</h2>
         </div>
         <Sidebar/>
+      </div>
+      <div className={styles.layoutContainer}>
+        <Layout/>
       </div>
     </div>
   )

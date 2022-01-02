@@ -7,10 +7,10 @@ export interface SidebarProps {}
 const Sidebar = ({}: SidebarProps) => {
   return (
     <div className={styles.sidebar}>
-      <SidebarItem text="HOME" element=".home"/>
-      <SidebarItem text="THE DAY" element=".the-day"/>
-      <SidebarItem text="RSVP" element=".rsvp"/>
-      <SidebarItem text="OUR STORY" element=".our-story"/>
+      <SidebarItem text="HOME" elementId="home"/>
+      <SidebarItem text="THE DAY" elementId="the-day"/>
+      {/* <SidebarItem text="RSVP" element=".rsvp"/>
+      <SidebarItem text="OUR STORY" element=".ourStory"/> */}
     </div>
   )
 }

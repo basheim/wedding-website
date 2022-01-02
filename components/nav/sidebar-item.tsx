@@ -1,15 +1,15 @@
 import styles from '../../styles/sidebar.module.css'
 
 export interface SidebarItemProps {
-  element: string;
+  elementId: string;
   text: string;
 }
 
-const SidebarItem = ({element, text}: SidebarItemProps) => {
+const SidebarItem = ({elementId, text}: SidebarItemProps) => {
 
   const onClick = () => {
-    const titleElement = document.getElementById(element);
-    titleElement?.scrollIntoView({ behavior: 'smooth' })
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth' })
   };
 
   return (
