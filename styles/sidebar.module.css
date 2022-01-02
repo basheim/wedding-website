@@ -1,0 +1,24 @@
+@import "main.module.css";
+
+.itemContainer {
+  width: 100%;
+  background-color: #d6b69d;
+  cursor: pointer;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+.itemContainer:hover {
+  opacity: 0.6;
+}
+
+.itemText {
+  color: #f7e5d9;
+  font-family: CustomSerif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  background-color: #d6b69d;
+}

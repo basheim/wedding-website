@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/password.module.css'
 import { useRouter } from 'next/router';
 import React from 'react';
 

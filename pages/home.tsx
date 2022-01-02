@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import Sidebar from '../components/nav/sidebar';
+import Image from 'next/image'
 
 const Home = () => {
   const router = useRouter();
@@ -17,14 +17,12 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-    <main className={styles.container}>
-      <h1 className={styles.title}>
-        Wedding Website TBD
-      </h1>
-      <div className={styles.mainImage}>
-        <Image objectFit="contain" src="/profile.jpg" width={300} height={300} />
+      <div className={styles.topImageContainer}>
+        <Image src="/profile.jpg" layout="fill"/>
       </div>
-    </main>
+      <div className={styles.sidebarContainer}>
+        <Sidebar/>
+      </div>
     </div>
   )
 }

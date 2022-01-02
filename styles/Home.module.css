@@ -1,68 +1,29 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding-top: 5rem;
-}
+@import "main.module.css";
 
 .homeContainer {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: #d1b7a0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d6b69d;
 }
 
-.completeContainer {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-image: url("../public/password-background.jpg");
-  background-size: cover; /* or contain depending on what you want */
-  background-position: bottom center;
-  background-repeat: no-repeat;
-}
-
-.passwordDiv {
-  margin-bottom: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-.navContainer {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
-}
-
-.mainImage {
-  border-radius: 1rem;
-  height: 300;
-  width: 300; 
+.topImageContainer {
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 30vh;
   overflow: hidden;
+  border-right: 1px solid #f7e5d9;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.sidebarContainer {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 30vh;
+  height: 70vh; 
+  overflow: hidden;
+  border-right: 1px solid #f7e5d9;
 }

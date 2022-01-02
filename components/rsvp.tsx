@@ -1,14 +1,14 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-export interface NavbarProps {
+export interface RsvpProps {
   children: any;
 }
 
-const Navbar = ({children}: NavbarProps) => {
+const Rsvp = ({children}: RsvpProps) => {
   return (
     <div className={styles.navContainer}>
       {children}
@@ -16,4 +16,4 @@ const Navbar = ({children}: NavbarProps) => {
   )
 }
 
-export default Navbar;
+export default Rsvp;
