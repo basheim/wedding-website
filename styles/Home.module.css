@@ -7,23 +7,28 @@
   background-color: #d6b69d;
 }
 
-.topImageContainer {
-  position: absolute;
+.topLeftContainer {
   padding: 5px;
   top: 0;
   left: 0;
-  width: 30vh;
-  height: 30vh;
-  overflow: hidden;
-  border-right: 1px solid #f7e5d9;
+  width: 15vw;
+  height: 25vh;
+  text-align: center;
+}
+
+.topLeftText {
+  font-family: CustomFancy;
+  font-size: 2.7vw;
+  font-weight: 100;
+  color: #f7e5d9;
 }
 
 .sidebarContainer {
   position: absolute;
-  top: 30vh;
+  top: 0;
   left: 0;
-  width: 30vh;
-  height: 70vh; 
-  overflow: hidden;
-  border-right: 1px solid #f7e5d9;
+  width: 15vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }

@@ -2,3 +2,8 @@
   font-family: CustomSerif;
   src: url("fonts/serif.otf") format("opentype");
 }
+
+@font-face {
+  font-family: CustomFancy;
+  src: url("fonts/dhenmark.ttf") format("opentype");
+}

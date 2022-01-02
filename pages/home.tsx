@@ -17,10 +17,10 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <div className={styles.topImageContainer}>
-        <Image src="/profile.jpg" layout="fill"/>
-      </div>
       <div className={styles.sidebarContainer}>
+        <div className={styles.topLeftContainer}>
+          <h2 className={styles.topLeftText}>{"Brandon & Ellen"}</h2>
+        </div>
         <Sidebar/>
       </div>
     </div>
