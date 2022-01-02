@@ -1,5 +1,4 @@
-import type { NextPage } from 'next'
-import styles from '../../styles/sidebar.module.css'
+import styles from '../../styles/Sidebar.module.css'
 import SidebarItem from './sidebar-item';
 
 export interface SidebarProps {}

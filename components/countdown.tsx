@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from '../styles/countdown.module.css'
+import styles from '../styles/Countdown.module.css'
 
 export interface CountdownProps {
   date: string;

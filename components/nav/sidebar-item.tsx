@@ -1,4 +1,4 @@
-import styles from '../../styles/sidebar.module.css'
+import styles from '../../styles/Sidebar.module.css'
 
 export interface SidebarItemProps {
   elementId: string;

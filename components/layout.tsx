@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/layout.module.css'
+import styles from '../styles/Layout.module.css'
 import Countdown from './countdown';
 
 export interface LayoutProps {}
