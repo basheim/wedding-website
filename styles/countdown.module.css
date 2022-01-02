@@ -1,0 +1,16 @@
+@import "main.module.css";
+
+.countdownContainer {
+  width: 100%;
+  background-color: #d6b69d;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: -5vh;
+}
+
+.countdownText {
+  margin: 0;
+  color: #f7e5d9;
+  font-family: CustomSerif;
+  font-size: 1.3vw;
+}

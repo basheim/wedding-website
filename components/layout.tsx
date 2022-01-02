@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/layout.module.css'
+import Countdown from './countdown';
 
 export interface LayoutProps {}
 
@@ -10,7 +11,7 @@ const Layout = ({}: LayoutProps) => {
       <div className={styles.page}>
         <div className={styles.firstPageTop}>
           <div className={styles.firstPageImageContainer}>
-            <Image src="/top.png" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image src="/top.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
           </div>
           <div className={styles.firstPageTextContainer}>
             <h1 className={styles.firstPageText}>07</h1>
@@ -30,13 +31,14 @@ const Layout = ({}: LayoutProps) => {
         <div className={styles.secondPage}>
           <div className={styles.secondPageLeftContainer}>
             <h1 className={styles.secondPageText1}>SHORELINE, WA</h1>
+            <Countdown date="07/16/2022 4:00 PM" />
             <div className={styles.secondPageImageContainer1}>
-              <Image src="/mid.png" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+              <Image src="/mid.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             </div>
           </div>
           <div className={styles.secondPageRightContainer}>
             <div className={styles.secondPageImageContainer2}>
-                <Image src="/bottom.png" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+                <Image src="/bottom.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             </div>
             <h1 className={styles.secondPageText2}>THE DAY</h1>
           </div>
