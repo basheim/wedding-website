@@ -1,5 +1,3 @@
-import styles from '../../styles/Sidebar.module.css'
-
 export interface SidebarItemProps {
   elementId: string;
   text: string;
@@ -13,8 +11,8 @@ const SidebarItem = ({elementId, text}: SidebarItemProps) => {
   };
 
   return (
-    <div className={styles.itemContainer} onClick={onClick}>
-      <p className={styles.itemText}>{text}</p>
+    <div className="item-container" onClick={onClick}>
+      <p className="item-text">{text}</p>
     </div>
   )
 }

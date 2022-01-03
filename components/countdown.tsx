@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import styles from '../styles/Countdown.module.css'
 
 export interface CountdownProps {
   date: string;
@@ -36,8 +35,8 @@ const Countdown = ({date}: CountdownProps) => {
   };
 
   return (
-    <div className={styles.countdownContainer}>
-        <h1 className={styles.countdownText}>{timeString}</h1>
+    <div className="countdown-container">
+        <h1 className="countdown-text">{timeString}</h1>
     </div>
   )
 }

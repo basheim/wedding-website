@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Sidebar from '../components/nav/sidebar';
@@ -16,14 +15,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={styles.homeContainer}>
-      <div className={styles.sidebarContainer}>
-        <div className={styles.topLeftContainer}>
-          <h2 className={styles.topLeftText}>{"Brandon & Ellen"}</h2>
+    <div className="home-container">
+      <div className="sidebar-container">
+        <div className="top-left-container">
+          <h2 className="top-left-text">{"Brandon & Ellen"}</h2>
         </div>
         <Sidebar/>
       </div>
-      <div className={styles.layoutContainer}>
+      <div className="layout-container">
         <Layout/>
       </div>
     </div>

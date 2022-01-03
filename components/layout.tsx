@@ -1,46 +1,45 @@
-import Image from 'next/image'
-import styles from '../styles/Layout.module.css'
+import Image from 'next/image';
 import Countdown from './countdown';
 
 export interface LayoutProps {}
 
 const Layout = ({}: LayoutProps) => {
   return (
-    <div className={styles.layout}>
-      <div className={styles.marker} id="home"/>
-      <div className={styles.page}>
-        <div className={styles.firstPageTop}>
-          <div className={styles.firstPageImageContainer}>
+    <div className="layout">
+      <div className="marker" id="home"/>
+      <div className="page">
+        <div className="first-page-top">
+          <div className="first-page-image-container">
             <Image src="/top.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
           </div>
-          <div className={styles.firstPageTextContainer}>
-            <h1 className={styles.firstPageText}>07</h1>
-            <h1 className={styles.firstPageText}>16</h1>
-            <h1 className={styles.firstPageText}>22</h1>
+          <div className="first-page-text-container">
+            <h1 className="first-page-text">07</h1>
+            <h1 className="first-page-text">16</h1>
+            <h1 className="first-page-text">22</h1>
           </div>
         </div>
-        <div className={styles.firstPageBottom}>
-          <div className={styles.firstPageTitleContainer}>
-            <h1 className={styles.firstPageTitle}>{"THE WEDDING OF BRANDON & ELLEN"}</h1>
+        <div className="first-page-bottom">
+          <div className="first-page-title-container">
+            <h1 className="first-page-title">{"THE WEDDING OF BRANDON & ELLEN"}</h1>
           </div>
         </div>
       </div>
-      <div className={styles.marginPage}/>
-      <div className={styles.marker} id="the-day"/>
-      <div className={styles.page}>
-        <div className={styles.secondPage}>
-          <div className={styles.secondPageLeftContainer}>
-            <h1 className={styles.secondPageText1}>SHORELINE, WA</h1>
+      <div className="margin-page"/>
+      <div className="marker" id="the-day"/>
+      <div className="page">
+        <div className="second-page">
+          <div className="second-page-left-container">
+            <h1 className="second-page-text1">SHORELINE, WA</h1>
             <Countdown date="07/16/2022 4:00 PM" />
-            <div className={styles.secondPageImageContainer1}>
+            <div className="second-page-image-container1">
               <Image src="/mid.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             </div>
           </div>
-          <div className={styles.secondPageRightContainer}>
-            <div className={styles.secondPageImageContainer2}>
+          <div className="second-page-right-container">
+            <div className="second-page-image-container2">
                 <Image src="/bottom.jpg" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             </div>
-            <h1 className={styles.secondPageText2}>THE DAY</h1>
+            <h1 className="second-page-text2">THE DAY</h1>
           </div>
         </div>
       </div>
