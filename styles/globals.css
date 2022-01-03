@@ -73,6 +73,7 @@ a {
   padding-left: 5vw;
   padding-right: 5vw;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 
