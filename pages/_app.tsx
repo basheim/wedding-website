@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>Placeholder Page</title>
+        <title>{"Brandon & Ellen"}</title>
         <meta name="description" content="TBD" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
