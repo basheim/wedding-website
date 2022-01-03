@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import styles from '../styles/password.module.css'
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -32,13 +31,13 @@ const Password = ({ password }: PasswordProps) => {
   }
 
   return (
-    <div className={styles.completeContainer}>
-      <main className={styles.container}>
-        <div className={styles.passwordDiv}>
-          <h1 className={styles.title}>
+    <div className="complete-container">
+      <main className="container">
+        <div className="password-div">
+          <h1 className="title">
             Enter Password
             </h1>
-          <div className={styles.passwordEntry}>
+          <div className="password-entry">
             <input type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} />
           </div>
         </div>
