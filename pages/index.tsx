@@ -49,7 +49,7 @@ const Password = ({ password }: PasswordProps) => {
 export async function getStaticProps() {
   return {
     props: {
-      password: "bubblebuttbrandon"
+      password: "dustoffyourfancypants"
     }
   };
 }
