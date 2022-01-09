@@ -258,10 +258,17 @@ input, select, textarea {
   position: fixed;
   height: 100%;
   width: 100%;
+}
+
+.background-image {
+  position: fixed;
+  height: 100%;
+  width: 100%;
   background-image: url("../public/password-background.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: bottom center;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .password-div {
@@ -286,6 +293,7 @@ input, select, textarea {
   background-color: #d1b7a0;
   border-radius: 10rem;
   border: 1px solid #d1b7a0;
+  z-index: 100;
 }
 
 .password-entry:focus {
@@ -302,6 +310,7 @@ input, select, textarea {
   background-color: #d1b7a0;
   border-radius: 10rem;
   border: 1px solid #d1b7a0;
+  z-index: 100;
 }
 
 .main-image {

@@ -37,6 +37,7 @@ const Password = ({ password }: PasswordProps) => {
 
   return (
     <div className="complete-container">
+      <div className="background-image" style={{opacity: passwordDisplay ? 0.7 : 1}}/>
       <main className="container">
         <div className="password-div">
           {passwordDisplay ?
