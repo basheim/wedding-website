@@ -8,6 +8,7 @@ export interface PasswordProps {
 
 const Password = ({ password }: PasswordProps) => {
   const [maybePassword, setMaybePassword] = useState("");
+  const [passwordDisplay, setPasswordDisplay] = useState(false);
   const router = useRouter();
   const cookie = "auth=congratsyougotintoourweddingwebsite";
 
@@ -30,16 +31,18 @@ const Password = ({ password }: PasswordProps) => {
     }
   }
 
+  const handleButtonClick = () => {
+    setPasswordDisplay(true);
+  }
+
   return (
     <div className="complete-container">
       <main className="container">
         <div className="password-div">
-          <h1 className="title">
-            Enter Password
-            </h1>
-          <div className="password-entry">
-            <input type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} />
-          </div>
+          {passwordDisplay ?
+            <input autoFocus className="password-entry" hidden={!passwordDisplay} type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} /> :
+            <button className="enter-button" onClick={handleButtonClick} hidden={passwordDisplay}>ENTER</button>
+          }
         </div>
       </main>
     </div>
