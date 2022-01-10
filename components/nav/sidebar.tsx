@@ -7,6 +7,7 @@ const Sidebar = ({}: SidebarProps) => {
     <div className="sidebar">
       <SidebarItem text="HOME" elementId="home"/>
       <SidebarItem text="THE DAY" elementId="the-day"/>
+      <SidebarItem text="LOVE STORY" elementId="love-story"/>
       {/* <SidebarItem text="RSVP" element=".rsvp"/>
       <SidebarItem text="OUR STORY" element=".ourStory"/> */}
     </div>
