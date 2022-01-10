@@ -54,55 +54,55 @@ const Layout = ({}: LayoutProps) => {
         <p> We’re so excited for you to join us in July 2022 for when we finally get to say “I do.” </p>
         <div className="third-page-images">
           <div className="row-container">
-            <Image priority={true} src="/twelve.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/twelve2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2012</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/thirteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/thirteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2013</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/fourteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/fourteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2014</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/fifteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/fifteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2015</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/sixteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/sixteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2016</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/seventeen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/seventeen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2017</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/eighteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/eighteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2018</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/nineteen.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/nineteen2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2019</span>
             </div>
           </div>
           <div className="row-container">
-            <Image priority={true} src="/twenty.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+            <Image priority={true} src="/twenty2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain"/>
             <div className="text-container">
               <span className="row-containerText">2020</span>
             </div>
