@@ -15,6 +15,7 @@ a {
 p {
   font-family: "Garamond", serif;
   color: #f7e5d9;
+  width: 87%;
   font-size: 1.3vw;
 }
 
@@ -28,7 +29,6 @@ input, select, textarea {
 
 .countdown-container {
   width: 100%;
-  background-color: #d6b69d;
   text-align: center;
 }
 
@@ -44,6 +44,11 @@ input, select, textarea {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  background-image: url("../public/upper-right-corner-background.png"), url("../public/bottom-left.png");
+  background-position: right top, left bottom;
+  background-attachment: fixed;
+  background-size: 20%;
+  background-repeat: no-repeat;
   background-color: #d6b69d;
   overflow: hidden;
 }
@@ -71,6 +76,7 @@ input, select, textarea {
   height: 100vh; 
   display: flex;
   flex-direction: column;
+  background-color: rgba(0,0,0,0);
 }
 
 .layout-container {
@@ -89,7 +95,6 @@ input, select, textarea {
 .layout {
   height: 100%;
   width: 100%;
-  background-color: #d6b69d;
   display: flex;
   flex-direction: column;
 }
@@ -287,7 +292,7 @@ input, select, textarea {
 
 .item-container {
   width: 100%;
-  background-color: #d6b69d;
+  background-color: rgba(0,0,0,0);
   cursor: pointer;
   margin-left: 4vw;
   margin-right: 4vw;
@@ -302,14 +307,14 @@ input, select, textarea {
 .item-text {
   color: #f7e5d9;
   font-family: CustomSerif;
-  font-size: 2vw;
+  font-size: 1.4vw;
   user-select: none;
 }
 
 .sidebar {
   height: 100%;
   width: 100%;
-  background-color: #d6b69d;
+  background-color: rgba(0,0,0,0);
 }
 
 
