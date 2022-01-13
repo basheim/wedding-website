@@ -51,6 +51,8 @@ input, select, textarea {
   background-repeat: no-repeat;
   background-color: #d6b69d;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-left-container {
@@ -400,4 +402,102 @@ input, select, textarea {
     width: 100%;
     flex-direction: column;
   }
+
+  .page {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .home-container{
+    background-size: 25%;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+
+  .layout-container {
+    left: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .first-page-top {
+    margin: 0;
+  }
+
+  .first-page-image-container {
+    width: 90%;
+  }
+
+  .first-page-text {
+    font-size: 15vw;
+  }
+
+   /* DATE*/
+  .first-page-bottom {
+    padding-right: 0;
+    margin-top: 2vw;
+  }
+
+  /* THE WEDDING OF B & E */
+  .first-page-title {
+    font-size: 7.5vw;
+    color: white;
+  }
+  
+  .margin-page {
+    min-height: 2vh;
+  }
+
+  .countdown-text {
+    font-size: 3vw;
+  }
+
+  /* PAGE TWO */
+  .second-page {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .second-page-left-container {
+    flex-grow: 2;
+  }
+
+  .second-page-right-container {
+    flex-grow: 3;
+  }
+
+  /* SHORELINE, WA */
+  .second-page-text1 {
+    font-size: 4vw;
+  }
+
+  .second-page-image-container2 {
+    width: 80%;
+  }
+
+  /*THE DAY*/  
+  .second-page-text2 {
+    font-size: 6vw;
+    margin-top: 7vw;
+    color: white;
+  }
+
+  .third-page-title {
+    font-size: 6vw;
+  }
+
+  .third-page-paragraph p {
+    font-size: 4vw;
+    width: 100%;
+  }
+
 }
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+} 
