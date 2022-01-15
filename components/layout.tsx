@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Countdown from './countdown';
+import Marker from './nav/marker';
 
 export interface LayoutProps { }
 
 const Layout = ({ }: LayoutProps) => {
   return (
     <div className="layout row">
-      <div className="marker" id="home" />
+      <Marker id="home"/>
       <div className="page col">
         <div className="first-page-top">
           <div className="first-page-image-container">
@@ -26,11 +27,10 @@ const Layout = ({ }: LayoutProps) => {
         </div>
       </div>
       <div className="margin-page col" />
-      <div className="marker" id="the-day" />
+      <Marker id="the-day"/>
       <div className="page row">
         <div className="second-page">
           <div className="second-page-left-container col">
-            <h1 className="second-page-text1">DUNN GARDENS</h1>
             <h1 className="second-page-text1">SHORELINE, WA</h1>
             <Countdown date="07/16/2022 4:00 PM" />
             <div className="second-page-image-container1">
@@ -45,7 +45,7 @@ const Layout = ({ }: LayoutProps) => {
           </div>
         </div>
       </div>
-      <div className="marker" id="love-story" />
+      <Marker id="love-story"/>
       <div className="page col">
         <div className="third-page">
           <h1 className="third-page-title">{"LOVE STORY"}</h1>

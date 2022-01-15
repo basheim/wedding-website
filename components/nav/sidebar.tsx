@@ -1,13 +1,15 @@
 import SidebarItem from './sidebar-item';
 
-export interface SidebarProps {}
+export interface SidebarProps {
+  onClickEffect?: () => void;
+}
 
-const Sidebar = ({}: SidebarProps) => {
+const Sidebar = ({ onClickEffect }: SidebarProps) => {
   return (
     <div className="sidebar">
-      <SidebarItem text="HOME" elementId="home"/>
-      <SidebarItem text="THE DAY" elementId="the-day"/>
-      <SidebarItem text="LOVE STORY" elementId="love-story"/>
+      <SidebarItem onClickEffect={onClickEffect} text="HOME" elementId="home"/>
+      <SidebarItem onClickEffect={onClickEffect} text="THE DAY" elementId="the-day"/>
+      <SidebarItem onClickEffect={onClickEffect} text="LOVE STORY" elementId="love-story"/>
       {/* <SidebarItem text="RSVP" element=".rsvp"/>
       <SidebarItem text="OUR STORY" element=".ourStory"/> */}
     </div>
