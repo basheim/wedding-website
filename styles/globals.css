@@ -39,7 +39,6 @@ input, select, textarea {
   font-size: 1.3vw;
 }
 
-
 .home-container {
   position: absolute;
   height: 100vh;
@@ -202,7 +201,7 @@ input, select, textarea {
 
 .second-page-text1 {
   font-family: CustomSerif;
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 0;
   margin-bottom: 3vh;
   font-weight: 100;
@@ -235,7 +234,7 @@ input, select, textarea {
 .third-page-images{
   width: 75%;
   margin: auto;
-  margin-top: 45px;
+  margin-left: 0;
 }
 
 .row-container {
@@ -403,6 +402,15 @@ input, select, textarea {
     flex-direction: column;
   }
 
+  .third-page-images{
+    width: 100%;
+    margin: auto;
+  }
+
+  .home-container {
+    background-image: none;
+  }
+
   .page {
     padding: 0px 0px 0px 0px;
   }
@@ -418,7 +426,6 @@ input, select, textarea {
   .layout-container {
     left: auto;
     width: auto;
-    height: auto;
   }
 
   .first-page-top {
@@ -436,17 +443,15 @@ input, select, textarea {
    /* DATE*/
   .first-page-bottom {
     padding-right: 0;
-    margin-top: 2vw;
   }
 
   /* THE WEDDING OF B & E */
   .first-page-title {
     font-size: 7.5vw;
-    color: white;
   }
   
   .margin-page {
-    min-height: 2vh;
+    min-height: 5vh;
   }
 
   .countdown-text {
@@ -455,8 +460,7 @@ input, select, textarea {
 
   /* PAGE TWO */
   .second-page {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 5vw;
   }
 
   .second-page-left-container {
@@ -480,7 +484,6 @@ input, select, textarea {
   .second-page-text2 {
     font-size: 6vw;
     margin-top: 7vw;
-    color: white;
   }
 
   .third-page-title {
