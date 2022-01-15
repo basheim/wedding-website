@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
 
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
         <link rel="manifest" href="/favicons/site.webmanifest" />
-        <link rel="preload" as="image" href="/password-background.jpg"/>z
+        <link rel="preload" as="image" href="/password-background.jpg"/>
       </Head>
       <Component {...pageProps} />
     </React.Fragment>

@@ -20,7 +20,7 @@ const Password = ({ password }: PasswordProps) => {
   }, []);
 
   const handlePassword = (newPassword: string) => {
-    setMaybePassword(newPassword);
+    setMaybePassword(newPassword.toLowerCase());
   }
 
   const handleKeyDown = async (event: any) => {
