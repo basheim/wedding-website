@@ -88,10 +88,9 @@ input, select, textarea {
   height: 100vh; 
   padding-left: 5vw;
   padding-right: 5vw;
-  overflow-y: auto;
   scroll-behavior: smooth;
+  overflow-y: auto;
 }
-
 
 .layout {
   height: 100%;
@@ -336,6 +335,14 @@ input, select, textarea {
   width: 100%;
 }
 
+.mobile-sidebar {
+  display: none;
+}
+
+.mobile-button {
+  display: none;
+}
+
 .background-image {
   position: fixed;
   height: 100%;
@@ -423,6 +430,10 @@ input, select, textarea {
     display: none;
   }
 
+  .mobile-break {
+    display: none;
+  }
+
   .layout-container {
     left: auto;
     width: auto;
@@ -495,6 +506,67 @@ input, select, textarea {
     width: 100%;
   }
 
+  .mobile-button {
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    position: sticky;
+    display: flex;
+    background-color: #d1b7a0;
+    z-index: 1000;
+  }
+
+  .mobile-sidebar {
+    position: absolute;
+    top: -100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #d1b7a0;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    transition: top 0.6s;
+  }
+
+  .mobile-sidebar-container {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%
+  }
+
+  .marker {
+    position: relative;
+    top: -10vh;
+  }
+  
+  .item-container {
+    text-align: center;
+    margin-bottom: 8vh;
+  }
+
+  .item-text {
+    font-size: 5vw;
+  }
+
+  .mobile-icon:active {
+    opacity: .5;
+  }
+
+  .x {
+    margin-top: 2vh;
+  }
+
+  .mobile-break {
+    height: 10vh;
+  }
+
+  .mobile-icon {
+    height: 6vh;
+    width: 6vh; 
+    margin-left: 4vw;
+  }
 }
 
 .row {

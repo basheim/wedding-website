@@ -1,11 +1,13 @@
 export interface SidebarItemProps {
   elementId: string;
   text: string;
+  onClickEffect?: () => void;
 }
 
-const SidebarItem = ({elementId, text}: SidebarItemProps) => {
+const SidebarItem = ({elementId, text, onClickEffect}: SidebarItemProps) => {
 
   const onClick = () => {
+    onClickEffect && onClickEffect();
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: 'smooth' })
   };
