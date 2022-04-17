@@ -1,7 +1,10 @@
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
+import NextNProgress from "nextjs-progressbar";
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/favicons/site.webmanifest" />
         <link rel="preload" as="image" href="/password-background.jpg"/>
       </Head>
+      <NextNProgress color="#f7e5d9" height={10} />
       <Component {...pageProps} />
+      <ToastContainer />
     </React.Fragment>
   ); 
   
