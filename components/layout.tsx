@@ -28,7 +28,7 @@ const Layout = ({ }: LayoutProps) => {
       </div>
       <div className="margin-page col" />
       <Marker id="the-day"/>
-      <div className="page row">
+      <div className="page col">
         <div className="second-page">
           <div className="second-page-left-container col">
             <h1 className="second-page-text1">SHORELINE, WA</h1>
@@ -80,7 +80,7 @@ const Layout = ({ }: LayoutProps) => {
         </div>
       </div>
       <div className="margin-page col" />
-      <div className="page col">
+      <div className="page row">
         <div className="third-page-images">
           <div className="row-container">
             <Image priority={true} src="/twelve2.jpg" className="row-image" width="100%" height="100%" layout="responsive" objectFit="contain" />
