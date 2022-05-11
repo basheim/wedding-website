@@ -9,14 +9,33 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 p {
-  font-family: "Garamond", serif;
+  font-family: serif;
   color: #f7e5d9;
   width: 87%;
   font-size: 1.3vw;
+}
+
+.paragraph-container li, .paragraph-container ul{
+  font-family: serif;
+  color: #f7e5d9;
+  width: 87%;
+  font-size: 1.3vw;
+}
+
+h4 {
+  font-family: CustomSerif;
+  color: #f7e5d9;
+  font-size: 1.3vw;
+}
+
+h2 {
+  font-family: CustomSerif;
+  color: #f7e5d9;
+  width: 87%;
+  font-size: 1.9vw;
 }
 
 * {
@@ -46,7 +65,7 @@ input, select, textarea {
   background-image: url("../public/upper-right-corner-background.png"), url("../public/bottom-left.png");
   background-position: right top, left bottom;
   background-attachment: fixed;
-  background-size: 20%;
+  background-size: 25vh;
   background-repeat: no-repeat;
   background-color: #d6b69d;
   overflow: hidden;
@@ -67,6 +86,7 @@ input, select, textarea {
   font-size: 2.7vw;
   font-weight: 100;
   color: #f7e5d9;
+  margin-bottom: 5px;
 }
 
 .sidebar-container {
@@ -78,6 +98,56 @@ input, select, textarea {
   display: flex;
   flex-direction: column;
   background-color: rgba(0,0,0,0);
+}
+
+.timeline-text {
+  text-align: center;
+}
+
+.continued-text {
+  margin-top: 0;
+}
+
+.bottom-text {
+  margin-bottom: 5px;
+}
+
+.payment-image-container {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 40%;
+  height: auto;
+}
+
+.venmo-image-container {
+  width: 40%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.flex-container {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-image {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-div {
+  background-color: #f7e5d9;
+  height: 5vh;
+  width: 1px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 87%;
 }
 
 .layout-container {
@@ -202,6 +272,15 @@ input, select, textarea {
   font-family: CustomSerif;
   font-size: 3vw;
   margin: 0;
+  margin-bottom: 2vh;
+  font-weight: 100;
+  color: #f7e5d9;
+}
+
+.address-text {
+  font-family: CustomSerif;
+  font-size: 2vw;
+  margin: 0;
   margin-bottom: 3vh;
   font-weight: 100;
   color: #f7e5d9;
@@ -242,7 +321,6 @@ input, select, textarea {
   width: 33.33%;
   padding: 0px;
   display: inline-block;
-  border-bottom: 1px dotted black;
   z-index: 10;
 }
 
@@ -277,6 +355,20 @@ input, select, textarea {
 
 .row-container:hover .row-image{
   opacity: 0.3;
+}
+
+.paragraph-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.paragraph-container h2 {
+  text-align: center;
+}
+
+.paragraph-image-container {
+  width: 87%;
+  margin-top: 30px;
 }
 
 @font-face {
@@ -403,6 +495,222 @@ input, select, textarea {
   overflow: hidden;
 }
 
+.searchable-dropdown-list-container {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  height: auto;
+  max-height: 35vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+.searchable-dropdown-list {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 3vw;
+}
+
+.searchable-dropdown-list li, .search-bar, .rsvp-input {
+  border: 1px solid #8C6F55; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  display: block; /* Make it into a block element to fill the whole list */
+  width: 100%;
+  height: 3vw;
+}
+
+.searchable-dropdown-list li, .search-bar {
+  background-color: #e2c9b4;
+}
+
+.rsvp-input {
+  background-color: #d6b69d;
+}
+
+
+.search-bar {
+  position: absolute;
+  width: 61.75%;
+  z-index: 110;
+  margin-top: 0;
+  border-bottom: 2px solid #8C6F55; 
+  font-size: 0.8vw;
+  color: #8C6F55; /* Add a #8C6F55 text color */
+  font-family: CustomSerif !important;
+}
+
+.search-bar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8C6F55;
+  opacity: 1; /* Firefox */
+}
+
+.rsvp-input {
+  margin-top: 0;
+  font-size: 0.8vw;
+  color: #8C6F55; /* Add a #8C6F55 text color */
+  font-family: CustomSerif !important;
+}
+
+.rsvp-button {
+  border: 1px solid #8C6F55; /* Add a border to all links */
+  background-color: #d6b69d;
+  display: block; /* Make it into a block element to fill the whole list */
+  width: 100%;
+  height: 3vw;
+  margin-top: 35px;
+  font-size: 0.8vw;
+  color: #8C6F55; /* Add a #8C6F55 text color */
+  font-family: CustomSerif !important;
+  cursor: pointer;
+}
+
+.rsvp-button:hover {
+  background-color: #f7e5d9;
+}
+
+.rsvp-button:disabled {
+  opacity: 0.3;
+  cursor: inherit;
+  background-color: inherit;
+}
+
+.top {
+  margin-top: 0 !important;
+}
+
+.search-bar:focus {
+  outline-width: 0;
+}
+
+.searchable-dropdown-list li:hover:not(.header) {
+  background-color: #b99d83;
+}
+
+.rsvp-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.rsvp-title {
+  float: center;
+  color: #8C6F55;
+  font-family: CustomSerif !important;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.rsvp-title .joining {
+  padding-left: 0.4em;
+  font-size: 2.6vw;
+  font-family: CustomFancy !important;
+}
+
+.rsvp-title .question-mark {
+  padding-left: 0.3em;
+  font-size: 2vw;
+  font-family: CustomFancy !important;
+}
+
+.vert-line {
+  background-color: #8C6F55;
+  height: 10vh;
+  width: 1px;
+}
+
+.rsvp-label {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 0.4em;
+  font-size: 0.8vw;
+  font-style: italic;
+  color: #8C6F55;
+  font-family: CustomSerif !important;
+}
+
+.searchable-dropdown-container, .searchable-dropdown-input {
+  background-color: rgba(0,0,0,0);
+  overflow: visible;
+  width: 100%;
+  height: 3vw;
+  border: none;
+  font-size: 0.8vw;
+  cursor: pointer;
+  font-family: CustomSerif !important;
+}
+
+.searchable-dropdown-input {
+  border: 1px solid #8C6F55;
+  color: #8C6F55;
+}
+
+.rsvp-overall-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centering-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.centering-div p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8vw;
+  color: #8C6F55; /* Add a #8C6F55 text color */
+  font-family: CustomSerif !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-search {
+  padding-top: 0 !important;
+}
+
+.no-select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: text;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.no-select:focus {
+  outline: none !important;
+}
+
+.ie-text {
+  z-index: 1000;
+  background-color: #d6b69d;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -436,7 +744,7 @@ input, select, textarea {
 
   .layout-container {
     left: auto;
-    width: auto;
+    width: 100%;
   }
 
   .first-page-top {
@@ -456,6 +764,10 @@ input, select, textarea {
     padding-right: 0;
   }
 
+  .timeline-container {
+    width: 100%;
+  }
+
   /* THE WEDDING OF B & E */
   .first-page-title {
     font-size: 7.5vw;
@@ -465,8 +777,12 @@ input, select, textarea {
     min-height: 5vh;
   }
 
+  .paragraph-image-container {
+    width: 100%;
+  }
+
   .countdown-text {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   /* PAGE TWO */
@@ -485,8 +801,14 @@ input, select, textarea {
   /* SHORELINE, WA */
   .second-page-text1 {
     font-size: 4vw;
+    margin-bottom: 1.5vh;
   }
 
+  .address-text {
+    font-size: 3.5vw;
+    margin-bottom: 2vh;
+  }
+  
   .second-page-image-container2 {
     width: 80%;
   }
@@ -501,13 +823,34 @@ input, select, textarea {
     font-size: 6vw;
   }
 
-  .third-page-paragraph p {
+  p {
+    font-family: "Garamond", serif;
+    color: #f7e5d9;
     font-size: 4vw;
     width: 100%;
   }
 
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  .paragraph-container li, .paragraph-container ul{
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .paragraph-container {
+    margin-top: 0vh;
+  }
+
   .mobile-button {
-    height: 10vh;
+    height: 80px;
     width: 100vw;
     align-items: center;
     position: sticky;
@@ -525,11 +868,11 @@ input, select, textarea {
     z-index: 1100;
     display: flex;
     flex-direction: column;
-    transition: top 0.6s;
+    transition: top 0.6s, opacity 0.6s;
   }
 
   .mobile-sidebar-container {
-    margin-top: 10vh;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -546,6 +889,20 @@ input, select, textarea {
     margin-bottom: 8vh;
   }
 
+  .flex-container {
+    width: 100%;
+  }
+
+  .payment-image-container {
+    margin-top: 30px;
+    width: 85%;
+  }
+  
+  .venmo-image-container {
+    width: 80%;
+    margin-top: 10px;
+  }
+
   .item-text {
     font-size: 5vw;
   }
@@ -559,14 +916,69 @@ input, select, textarea {
   }
 
   .mobile-break {
-    height: 10vh;
+    height: 80px;
   }
 
   .mobile-icon {
-    height: 6vh;
-    width: 6vh; 
+    height: 50px;
+    width: 50px; 
     margin-left: 4vw;
   }
+
+  .searchable-dropdown-list li, .search-bar, .rsvp-input, .rsvp-button {
+    height: 12vw;
+  }
+
+  .searchable-dropdown-list {
+    padding-top: 12vw;
+  }
+
+  .search-bar {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  .rsvp-input, .rsvp-button {
+    font-size: 4vw  ;
+  }
+
+  .rsvp-container {
+    width: 100%;
+  }
+
+  .rsvp-title {
+    font-size: 5.5vw;
+  }
+
+  .rsvp-title .joining {
+    padding-left: 0.3em;
+    font-size: 7.0vw;
+  }
+  
+  .rsvp-title .question-mark {
+    padding-left: 0.2em;
+    font-size: 6.7vw;
+  }
+
+  .rsvp-label {
+    margin-top: 20px;
+    margin-bottom: 0.4em;
+    font-size: 3vw;
+  }
+
+  .searchable-dropdown-container, .searchable-dropdown-input {
+    height: 12vw;
+    font-size: 4vw;
+  }
+
+  .centering-div p {
+    font-size: 4vw;
+  }
+
+  .rsvp-overall-container {
+    margin-top: 0;
+  }
+
 }
 
 .row {
@@ -576,3 +988,12 @@ input, select, textarea {
 .col {
   flex: 1 0 auto;
 } 
+
+:root {
+  --toastify-color-light: #e2c9b4;
+  --toastify-color-success: #8C6F55;
+  --toastify-color-warning: #8C6F55;
+  --toastify-color-error: #8C6F55;
+  --toastify-toast-background: #e2c9b4;
+  --toastify-text-color-light: #8C6F55;
+}

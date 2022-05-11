@@ -1,21 +1,24 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { CookieAuth, getAuthorizedCookie } from '../lib/firebase';
+import { hasCookie } from '../lib/firebase';
 
-export interface PasswordProps {
-  password: string;
-}
-
-const Password = ({ password }: PasswordProps) => {
+const Password = () => {
   const [maybePassword, setMaybePassword] = useState("");
   const [passwordDisplay, setPasswordDisplay] = useState(false);
+  const [validateCookieRequest, setValidateCookieRequest] = useState(false);
   const router = useRouter();
-  const cookie = "auth=congratsyougotintoourweddingwebsite";
 
   useEffect(() => {
-    const initialCookies = document.cookie.split(';');
-    if (initialCookies.includes(cookie)) {
-      router.push("/home");
+    if (!validateCookieRequest) {
+      const initialCookies = document.cookie.split(';');
+      hasCookie(initialCookies).then((status) => {
+        if (status) {
+          router.push("/home");
+        }
+      });
+      setValidateCookieRequest(true);
     }
   }, []);
 
@@ -24,10 +27,13 @@ const Password = ({ password }: PasswordProps) => {
   }
 
   const handleKeyDown = async (event: any) => {
-    if (event.key === 'Enter' && password === maybePassword) {
-      document.cookie = `${cookie}; path=/`;
-      document.cookie = `${cookie}; path=/home`;
-      await router.push('/home');
+    if (event.key === 'Enter') {
+      const auth: CookieAuth = await getAuthorizedCookie(maybePassword);
+      if (auth.isAuthorized) {
+        document.cookie = `${auth.cookie?.trim()}; path=/`;
+        document.cookie = `${auth.cookie?.trim()}; path=/home`;
+        await router.push('/home');
+      }
     }
   }
 
@@ -41,21 +47,13 @@ const Password = ({ password }: PasswordProps) => {
       <main className="container">
         <div className="password-div">
           {passwordDisplay ?
-            <input autoFocus className="password-entry" hidden={!passwordDisplay} type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} /> :
-            <button className="enter-button" onClick={handleButtonClick} hidden={passwordDisplay}>ENTER</button>
+              <input autoFocus className="password-entry no-select" hidden={!passwordDisplay} type="text" value={maybePassword} onChange={e => handlePassword(e.target.value)} onKeyDown={handleKeyDown} /> :
+              <button className="enter-button" onClick={handleButtonClick} hidden={passwordDisplay}>ENTER</button>
           }
         </div>
       </main>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      password: "dustoffyourfancypants"
-    }
-  };
 }
 
 export default Password;
